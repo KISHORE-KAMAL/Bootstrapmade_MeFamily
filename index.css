@@ -1,0 +1,436 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body
+{
+    width: 100%;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* navbar starts */
+
+nav
+{
+    /* border: 1px solid red; */
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    box-shadow: 2px 0px 30px 10px rgba(225, 219, 219, 0.333);
+    background-color: white;
+    z-index: 1111;
+}
+
+nav ul
+{
+    /* border: 8px solid green; */
+    display: inline;
+    margin-left: 365px;
+}
+
+nav ul li
+{
+    /* border: 1px solid yellow; */
+    display: inline;
+}
+
+nav .navbar-brand-logo
+{
+    margin-left: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #24325d;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    color: #24325d;
+    transition: color .5s;
+    
+}
+
+nav ul li a:hover
+{
+    color: #006fbe;
+}
+/* navbar ends */
+
+/* Banner starts */
+
+.banner
+{
+    /* border: 2px solid red; */
+    height: 450px;
+    background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation-name: bannerimage;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes bannerimage {
+    0%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");}
+    20%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");}
+    50%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-2.jpg");}
+    100%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-3.jpg");}
+}
+/* Banner ends */
+
+/* Family Info starts */
+
+.family-info
+{
+    /* border: 2px solid red; */
+    margin: 50px 120px;
+}
+.family-info h1
+{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.824);
+}
+
+.family-info h1::before
+{
+    content: "";
+    background-color: rgba(122, 117, 117, 0.258);
+    display: block;
+    height: 1px;
+    width: 102px;
+    position: relative;
+    left: 494px;
+    top: 58px;
+}
+.family-info h1::after
+{
+    content: "";
+    background-color: #006fbe;
+    display: block;
+    height: 3px;
+    width: 38px;
+    position: relative;
+    left: 526px;
+    top: 10px;
+}
+
+
+.family-info .para
+{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.family-info .family-info-content
+{
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.family-info .family-info-content .family-image
+{
+    /* border: 2px solid green; */
+    width: 49%;
+}
+.family-info .family-info-content .family-image img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.family-info .family-info-content .family-text
+{
+    /* border: 2px solid yellow; */
+    width: 49%;
+}
+.family-info .family-info-content .family-text ul
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.family-info .family-info-content .family-text ul li
+{
+    line-height: 32px;
+    list-style-type: none;
+}
+
+.family-info .family-info-content .family-text .para1
+{
+    margin-bottom: 35px;
+
+}       
+.family-info .family-info-content .family-text a
+{
+    border: 2px solid #006fbe;
+    padding: 9px 34px;
+    color: #006fbe;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all .3s;
+}
+
+.family-info .family-info-content .family-text a:hover
+{
+    background-color: #006fbe;
+    color: white;
+}
+
+.family-info .fa-check{
+    color: #006fbe;
+}
+
+
+/* Family Info Ends */
+
+/* Details starts */
+
+.details
+{
+    /* border: 2px solid red; */
+    height: 240px;
+    width: 380px;
+    text-align: center;
+}
+.details i
+{
+    /* border: 1px solid blue; */
+    padding:  18px 18px;
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.25);
+    color: #006fbe;
+    margin-bottom: 10px;
+}
+.details a
+{
+    text-decoration: none;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.9);
+    /* border: 1px solid red; */
+    /* margin-bottom: 140px; */
+}
+
+.details a:hover
+{
+    color: #006fbe;
+}
+
+.details a::after
+{
+    content: "";
+    background-color: #006fbe;
+    display: block;
+    height: 2px;
+    width: 54px;
+    position: relative;
+    left: 160px;
+    top: 14px;
+}
+
+.details p
+{
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.741);
+}
+
+.details-flex-1
+{
+    /* border: 2px solid red; */
+    height: 540px;
+    width: 88%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Details ends */
+
+/* Recent photos starts */
+
+.recent-photos
+{
+    /* border: 2px solid red; */
+    text-align: center;
+    height: 400px;
+    width: 88%;
+    margin: 1px auto;
+}
+
+.recent-photos h1
+{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    color: rgba(0, 0, 0, 0.824);
+}
+
+.recent-photos h1::before
+{
+    content: "";
+    background-color: rgba(122, 117, 117, 0.258);
+    display: block;
+    height: 1px;
+    width: 102px;
+    position: relative;
+    left: 534px;
+    top: 58px;
+}
+.recent-photos h1::after
+{
+    content: "";
+    background-color: #006fbe;
+    display: block;
+    height: 3px;
+    width: 38px;
+    position: relative;
+    left: 566px;
+    top: 10px;
+}
+
+.recent-photos p
+{
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.img-flex-box
+{
+    /* border: 2px solid red; */
+    height: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-flex-box img
+{
+    height: 156px;
+    width: 208px;
+}
+
+/* Recent photos ends */
+
+/* Footer starts */
+
+footer
+{
+    background: #1d284b;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+}
+
+footer h1
+{
+    font-size: 40px;
+    padding-top: 18px;
+}
+
+footer .paragraph
+{
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+footer .social-media-icons i
+{
+    /* border: 1px solid red; */
+    background-color: #006fbe;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    padding-top: 10px;
+    margin-right: 6px;
+}
+
+footer .social-media-icons i:hover
+{
+    cursor: pointer;
+    background-color: #58ace8bc;
+}
+
+footer .footer-para
+{
+    margin-top: 40px;
+}
+footer .footer-para p
+{
+    margin-bottom: 4px;
+}
+
+.bold
+{
+    font-weight: 800;
+}
+.clr-blue
+{
+    color: #1784d1;
+}
+.clr-blue:hover
+{
+    color: #0d8be5;
+    cursor: pointer;
+}
+
+/* Footer ends */
+
+/* Scroll Arrow starts */
+
+.scroll-arrow
+{
+    background-color: #006fbe;
+    height: 44px;
+    width: 44px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 34px;
+    right: 30px;
+    z-index: 98765;
+} 
+
+.scroll-arrow:hover
+{
+    background-color: #58ace8bc;
+}
+
+.scroll-arrow a
+{
+    color: white;
+    /* border: 2px solid red; */
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding-left: 18px;
+    padding-top: 6px;
+}
+ 
+/* Scroll Arrow ends */
